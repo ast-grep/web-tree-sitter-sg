@@ -1,13 +1,13 @@
 use wasm_bindgen::prelude::*;
 use wasm_bindgen_test::*;
-use web_tree_sitter_sys::*;
+use web_tree_sitter_sg::*;
 
 #[wasm_bindgen_test]
 async fn load_bytes() {
     async fn inner() -> Result<(), JsValue> {
         TreeSitter::init().await?;
         let bytes: &[u8] = include_bytes!("../../node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm");
-        web_tree_sitter_sys::Language::load_bytes(&bytes.into()).await?;
+        web_tree_sitter_sg::Language::load_bytes(&bytes.into()).await?;
         Ok(())
     }
     assert!(inner().await.is_ok());

@@ -1,5 +1,5 @@
 use wasm_bindgen::prelude::*;
-use web_tree_sitter_sys::*;
+use web_tree_sitter_sg::*;
 
 pub(crate) async fn cursor() -> Result<Option<TreeCursor>, JsValue> {
     let tree = make().await?;

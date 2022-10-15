@@ -1,6 +1,6 @@
 use std::{error::Error, path::PathBuf};
 use wasm_bindgen::prelude::*;
-use web_tree_sitter_sys::*;
+use web_tree_sitter_sg::*;
 
 pub(crate) async fn load() -> Result<Language, JsValue> {
     let id = "javascript";

@@ -115,7 +115,7 @@ FLAGS:
             let mut cmd = Command::new(cargo);
             cmd.current_dir(metadata::project_root());
             cmd.args(&["build"]);
-            cmd.args(&["--package", "web-tree-sitter-sys"]);
+            cmd.args(&["--package", "web-tree-sitter-sg"]);
             cmd.args(cargo_args);
             cmd.status()?;
 
@@ -148,7 +148,7 @@ FLAGS:
             cmd.env("RUSTFLAGS", "-Dwarnings");
             cmd.args(&["check", "--all-targets"]);
             cmd.args(&["--package", "xtask"]);
-            cmd.args(&["--package", "web-tree-sitter-sys"]);
+            cmd.args(&["--package", "web-tree-sitter-sg"]);
             cmd.args(cargo_args);
             cmd.status()?;
 
@@ -180,7 +180,7 @@ FLAGS:
             cmd.current_dir(metadata::project_root());
             cmd.args(&["+nightly", "clippy", "--all-targets"]);
             cmd.args(&["--package", "xtask"]);
-            cmd.args(&["--package", "web-tree-sitter-sys"]);
+            cmd.args(&["--package", "web-tree-sitter-sg"]);
             cmd.args(cargo_args);
             cmd.args(&["--", "-D", "warnings"]);
             cmd.status()?;
@@ -313,7 +313,7 @@ FLAGS:
             cmd.env("RUSTFLAGS", "-Dwarnings");
             cmd.args(&["test", "--examples", "--lib", "--tests"]);
             cmd.args(&["--package", "xtask"]);
-            cmd.args(&["--package", "web-tree-sitter-sys"]);
+            cmd.args(&["--package", "web-tree-sitter-sg"]);
             cmd.args(cargo_args);
             cmd.status()?;
 
@@ -345,7 +345,7 @@ FLAGS:
             cmd.current_dir(metadata::project_root());
             cmd.args(&["+nightly", "udeps", "--all-targets"]);
             cmd.args(&["--package", "xtask"]);
-            cmd.args(&["--package", "web-tree-sitter-sys"]);
+            cmd.args(&["--package", "web-tree-sitter-sg"]);
             cmd.args(cargo_args);
             cmd.status()?;
 

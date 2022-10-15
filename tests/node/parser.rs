@@ -3,7 +3,7 @@
 use js_sys::Function;
 use wasm_bindgen::{prelude::*, JsCast};
 use wasm_bindgen_test::*;
-use web_tree_sitter_sys::*;
+use web_tree_sitter_sg::*;
 
 #[wasm_bindgen_test]
 async fn new() {

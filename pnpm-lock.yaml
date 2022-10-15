@@ -1,0 +1,46 @@
+lockfileVersion: 5.4
+
+specifiers:
+  tree-sitter-cli: ^0.20.0
+  tree-sitter-javascript: https://github.com/tree-sitter/tree-sitter-javascript#rust-0.20.0
+  web-tree-sitter-wasm-bindgen: silvanshade/web-tree-sitter-wasm-bindgen
+
+dependencies:
+  web-tree-sitter-wasm-bindgen: github.com/silvanshade/web-tree-sitter-wasm-bindgen/27237af5caa2619841b818b28e710349d91a4280
+
+devDependencies:
+  tree-sitter-cli: 0.20.7
+  tree-sitter-javascript: github.com/tree-sitter/tree-sitter-javascript/2dd6a0f9069d3fd65290908ff8625becb2e35702
+
+packages:
+
+  /nan/2.17.0:
+    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    dev: true
+
+  /tree-sitter-cli/0.20.7:
+    resolution: {integrity: sha512-MHABT8oCPr4D0fatsPo6ATQ9H4h9vHpPRjlxkxJs80tpfAEKGn6A1zU3eqfCKBcgmfZDe9CiL3rKOGMzYHwA3w==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
+  /web-tree-sitter/0.20.5:
+    resolution: {integrity: sha512-mpXlqIeEBE5Q71cnBnt8w6XKhIiKmllPECqsIFBtMvzcfCxA8+614iyMJXBCQo95Vs3y1zORLqiLJn25pYZ4Tw==}
+    dev: false
+
+  github.com/silvanshade/web-tree-sitter-wasm-bindgen/27237af5caa2619841b818b28e710349d91a4280:
+    resolution: {tarball: https://codeload.github.com/silvanshade/web-tree-sitter-wasm-bindgen/tar.gz/27237af5caa2619841b818b28e710349d91a4280}
+    name: web-tree-sitter-wasm-bindgen
+    version: 0.20.5
+    dependencies:
+      web-tree-sitter: 0.20.5
+    dev: false
+
+  github.com/tree-sitter/tree-sitter-javascript/2dd6a0f9069d3fd65290908ff8625becb2e35702:
+    resolution: {tarball: https://codeload.github.com/tree-sitter/tree-sitter-javascript/tar.gz/2dd6a0f9069d3fd65290908ff8625becb2e35702}
+    name: tree-sitter-javascript
+    version: 0.20.0
+    requiresBuild: true
+    dependencies:
+      nan: 2.17.0
+    dev: true
