@@ -122,7 +122,7 @@ jobs:
     needs: [skip-commit]
     runs-on: ubuntu-latest
     env:
-      WASM_BINDGEN_CLI_VERSION: "0.2.81"
+      WASM_BINDGEN_CLI_VERSION: "0.2.83"
     steps:
       - uses: actions/checkout@v2
       - name: Install Rust toolchain
