@@ -19,7 +19,7 @@ lto = "fat"
 opt-level = "z"
 
 [features]
-default = ["web"]
+default = ["node"]
 node = []
 web = ["web-sys"]
 
